@@ -17,14 +17,14 @@ function addTableData(id, text, ){
 document.getElementById('register').addEventListener('click', function (event){
     event.preventDefault()
 
-    const form = document.getElementById('data')
+    const form = document.getElementById('data') //Const criada e não utilizada
 
     const fullname = document.getElementById('fullname').value
-    fullname.id = 'name-'
-    fullname.name = 'name'
+    fullname.id = 'name-' //Não entendi essa parte no código
+    fullname.name = 'name' //Não entendi essa parte no código
     const team = document.getElementById('team').value
-    team.id = 'team-'
-    team.name = 'team'
+    team.id = 'team-' //Não entendi essa parte no código
+    team.name = 'team' //Não entendi essa parte no código
     
     let data = {name: fullname, team: team}
         if(data.name !== '' && data.team !== ''){
@@ -43,7 +43,7 @@ document.getElementById('create-table').addEventListener('click',function(event)
 
     while (table.firstChild) {
         table.removeChild(table.firstChild);
-    }
+    } //Bloco While não foi escrito por você
 
     if(dataBase.length > 0){
         
@@ -93,7 +93,7 @@ document.getElementById('switch-theme').addEventListener('click', function(event
     document.body.classList.toggle('is-dark')
 })
 
-const registerBtn = document.getElementById('register');
+const registerBtn = document.getElementById('register'); //Não se utiliza JavaScript para estilização que pode ser feita para no HTML
 registerBtn.style.backgroundColor = 'red';
 registerBtn.style.border = 'none';
 registerBtn.style.color = 'white';
